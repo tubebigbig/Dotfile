@@ -1,0 +1,4 @@
+[user]
+	name = Victor Liang
+[alias]
+  				lg = log --all --pretty='format:%d %Cblue%h%Creset %an - %s %C(green)(%ar)%C(reset)' --graph
