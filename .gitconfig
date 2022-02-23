@@ -1,4 +1,7 @@
 [user]
-	name = Victor Liang
+	name = VictorLiang
 [alias]
   				lg = log --all --pretty='format:%d %Cblue%h%Creset %an - %s %C(green)(%ar)%C(reset)' --graph
+          co = checkout
+[core]
+	editor = nvim
