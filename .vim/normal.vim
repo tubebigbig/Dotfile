@@ -50,3 +50,21 @@ set foldlevel=2
 
 set splitbelow
 set splitright
+
+filetype plugin indent on
+
+set hidden
+" if has("nvim-0.5.0") || has("patch-8.1.1564")
+  " " Recently vim can merge signcolumn and number column into one
+  " set signcolumn=number
+" else
+  " set signcolumn=yes
+" endif
+
+highlight Pmenu ctermfg=250 ctermbg=235 guifg=#bcbcbc guibg=#262626
+highlight PmenuSel ctermfg=250 ctermbg=131 guifg=#bcbcbc guibg=#af5f5f
+" highlight link CocErrorLint NormalFloat
+" highlight link CocWarningLine NormalFloat
+" highlight link CocInfoLine NormalFloat
+" highlight link CocHintLine NormalFloat
+" highlight link CocSelectedLine PmenuSel
