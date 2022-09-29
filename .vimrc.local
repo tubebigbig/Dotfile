@@ -7,21 +7,34 @@ Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
 Plug 'rust-lang/rust.vim'
-Plug 'SirVer/ultisnips'
+"Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'evanleck/vim-svelte', {'branch': 'main'}
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
 source ~/.vim/normal.vim
 source ~/.vim/mapping.vim
 source ~/.vim/statusline.vim
 
+set autowrite
+
 " snip
 " let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-t>b"
-let g:UltiSnipsJumpBackwardTrigger="<c-t>z"
+"let g:UltiSnipsJumpForwardTrigger="<c-t>b"
+"let g:UltiSnipsJumpBackwardTrigger="<c-t>z"
 
 " coc
+let g:coc_global_extensions = [
+      \'coc-prettier',
+      \'coc-eslint',
+      \'coc-tsserver',
+      \'coc-rust-analyzer',
+      \'coc-json',
+      \'coc-css',
+      \]
 inoremap <silent><expr> <s-TAB>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<TAB>" :

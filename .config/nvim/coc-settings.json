@@ -1,6 +1,10 @@
 {
   "eslint.run": "onSave",
+  "eslint.format.enable": true,
   "eslint.autoFixOnSave": true,
+  "eslint.validate": ["svelte", "javascript"],
+  "tsserver.enableJavascript": true,
+  "tsserver.trace.server": "verbose",
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "markdown",
@@ -10,5 +14,6 @@
     "typescriptreact",
     "json"
   ],
-  "prettier.eslintIntegration": true
+  "prettier.eslintIntegration": true,
+  "svelte.enable-ts-plugin": true
 }
